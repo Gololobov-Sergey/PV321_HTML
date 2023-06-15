@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seasons</title>
+    <style>
+        
+        body{
+            font-family: serif;
+        }
+        
+        ul
+        {
+            background-color: bisque;
+        }
+        
+        li
+        {
+            background-color: burlywood;
+            margin: 5px;
+        }
+        ul li{
+            list-style-image: url(img/icons/chevron-right.svg);
+        }
+        
+        #winter li{ list-style-image: url(img/icons/winter_16.png); }
+        #spring li{ list-style-image: url(img/icons/spring_16.png); }
+        #summer li{ list-style-image: url(img/icons/summer_16.png); }
+        #autumn li{ list-style-image: url(img/icons/autumn_16.png); }
+    
+    </style>
+</head>
+<body>
+    <h4>Seasones</h4>
+    <ul>
+        <li >Зима
+            <ul id="winter">
+                <li>Грудень</li>
+                <li>Січень</li>
+                <li>Лютий</li>
+            </ul>
+        </li>
+        <li id="spring">Весна
+            <ul>
+                <li>Березень</li>
+                <li>Квітень</li>
+                <li>Травень</li>
+            </ul>
+        </li>
+        <li id="summer">Літо
+            <ul>
+                <li>Червень</li>
+                <li>Липень</li>
+                <li>Сетпень</li>
+            </ul>
+        </li>
+        <li id="autumn">Осінь
+            <ul>
+                <li>Вересень</li>
+                <li>Жовтень</li>
+                <li>Листопад</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
