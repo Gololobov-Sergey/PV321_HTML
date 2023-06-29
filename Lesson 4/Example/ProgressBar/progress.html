@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 30px;
+            border: 3px solid orange;
+            margin: auto;
+        }
+        
+        .progress{
+            width: 50px;
+            height: 30px;
+            background-color: orange;
+            animation: move 3s linear alternate infinite;
+        }
+        
+        @keyframes move{
+            from{
+               margin-left: 0px;
+            }
+            to{
+               margin-left: 250px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="progress"></div>
+    </div>
+</body>
+</html>

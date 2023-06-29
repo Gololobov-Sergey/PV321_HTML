@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        .transit{
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            padding: 20px 30px;
+            font-size: 30px;
+            margin: 20px;
+            /*transition: all 0.5s ease-in 0s;*/
+            transition-property: background-color, font-size;
+            transition-duration: 1s, 0.5s;
+            transition-timing-function: ease, linear;
+            transition-delay: 0s, 0.5s;
+        }
+        
+        .transit:hover{
+            background-color: red;
+            font-size: 40px;
+        }
+        
+        .transf{
+            /*transform: rotate(45deg);*/
+            text-decoration: none;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            padding: 20px 30px;
+            font-size: 30px;
+            margin: 20px;
+            width: 150px;
+         
+        }
+        
+        .transf:hover{
+            transform: rotate(45deg);
+            transform-origin: 20% 40%; 
+/*            transform: scale(1.1, 1.1);*/
+            transition: 0.8s;
+/*            transform: translate(20px, 20px);*/
+                
+        }
+        a{
+            display: block;
+        }
+        
+        .cont{
+            height: 200px;
+            width: 500px;
+            margin: auto;
+        }
+        
+        .puls1{
+            text-decoration: none;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            padding: 20px 30px;
+            font-size: 30px;
+            margin-top: 50px;
+            animation: pulse 2s ease infinite;
+
+        }
+        
+        .puls2{
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            margin-top: 20px;
+            
+        }
+        
+/*
+        @keyframes pulse
+        {
+            from{
+                transform: scale(1, 1);
+            }
+            to{
+                transform: scale(1.1, 1.1);
+            }
+        }
+*/ 
+        @keyframes pulse
+        {
+            0%, 100% { transform: scale(1, 1); }
+            50% { transform: scale(1.1, 1.1); }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <!--<div>
+            <a class="transit" href="">Click</a>
+        </div>
+        
+        <div class="transf">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>-->
+        
+        <div class="puls2"><a class="puls1" href="">Click</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            margin: auto;
+            padding: 50px;
+            background-color: antiquewhite;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .images{
+            float: left;
+            
+        }
+        
+        .calc{
+            margin-top: 310px;
+            transform: rotate(-30deg);
+            animation: small_animation 1.5s linear alternate none;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+        
+        .book{
+            margin-top: 310px; 
+            transform: rotate(-15deg);
+            animation: big_animation 2s linear alternate none;
+            animation-delay: 0s;
+            animation-fill-mode: forwards;
+            
+        }
+        
+        .pallete{
+            transform: rotate(30deg);
+            margin-top: 310px;
+            animation: small_animation 1.5s linear alternate none;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+        }
+        
+        .paper{
+            margin-top: 310px;           
+            transform: rotate(15deg);
+            animation: big_animation 2s linear alternate none;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        
+        .pencil{
+            transform: rotate(90deg);      
+            margin-left: 220px;
+            margin-top: 110px;
+            animation: big_animation 1.5s linear alternate none;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        .clear{
+            clear: both;
+        }
+        
+        @keyframes big_animation{
+            from{
+                margin-top: 310px;
+            }
+            to{
+                margin-top: 0px;
+            }
+        }
+        @keyframes small_animation{
+            from{
+                margin-top: 310px;
+            }
+            to{
+                margin-top: 100px;
+            }
+        }
+        
+        @keyframes pencil_animation{
+            from{
+                margin-top: 110px;
+            }
+            to{
+                margin-top: 0px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="images calc"><img src="../calc.png" alt="" width="100px"></div> 
+        <div class="images book"><img src="../book.png" alt="" width="150px"></div>       
+        <div class="images paper"><img src="../paper.png" alt="" width="150px"></div>
+        <div class="images pallete"><img src="../pallete.png" alt="" width="100px"></div> 
+        <div class="clear"></div>      
+        <div class="images pencil"><img src="../pencil.png" alt="" width="50px"></div>
+    </div>
+</body>
+</html>
