@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            width: 80%;
+            min-width: 650px;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        
+        .col2{
+            width: 17%;
+            text-align: center;
+        }
+        
+        tbody tr td{
+            text-align: center;
+        }
+        
+        tbody tr td:first-child{
+            text-align: left;
+            padding-left: 10px;
+        }
+        
+        tbody tr:nth-child(odd){
+            background-color: #a3a3a3;
+        }
+        
+        tbody tr:nth-child(even){
+            background-color: #d4d4d4;
+        }
+        
+
+        thead{
+            color: white;
+        }
+        .col-1{
+            background-color: #a6a6ff;
+        }
+        
+        .col-2{
+            background-color: #7070be;
+        }
+        
+        .col-3{
+            background-color: #3e3ea7;
+        }
+        
+        .col-4{
+            background-color: #2b2b8e;
+        }
+        
+        .col-5{
+            background-color: #191960;
+        }
+    </style>
+</head>
+<body>
+    <table>
+       <colgroup>
+           <col class="col1">
+           <col span="4" class="col2">
+       </colgroup>
+        <thead>
+            <tr>
+                <th class="col-1">Choice your plan</th>
+                <th class="col-2"><div><p>starter</p><p><span>$10</span></p><p>per month</p></div></th>
+                <th class="col-3"><div><p>econom</p><p><span>$10</span></p><p>per month</p></div></th>
+                <th class="col-4"><div><p>standart</p><p><span>$10</span></p><p>per month</p></div></th>
+                <th class="col-5"><div><p>premium</p><p><span>$10</span></p><p>per month</p></div></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th><a class="btn" href="">START</a></th>
+                <th><a class="btn" href="">START</a></th>
+                <th><a class="btn" href="">START</a></th>
+                <th><a class="btn" href="">START</a></th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Lorem ipsum.</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum.</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum.</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum.</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum.</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum.</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

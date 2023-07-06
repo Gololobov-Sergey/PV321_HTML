@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>    
+        table {
+            border: 1px solid blue;
+            border-radius: 5px;
+            border-collapse: separate;
+            border-spacing: 3px;
+            background-image: url(baby-girl-drinking.png);
+            empty-cells: hide;
+        }
+        
+        th{
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: aquamarine;
+        }
+        
+        
+        td{
+            border: 1px solid green;
+            border-radius: 5px;
+            background-color: cornflowerblue;
+            width: 70px;
+            height: 25px;
+        }
+        
+        #col3{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            vertical-align: bottom;
+            background-image: url( brush.png);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor.</td>
+            <td>Lorem ipsum dolor.</td>
+            <td>Lorem ipsum dolor.</td>
+            <td>Lorem ipsum dolor.</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor.</td>
+            <td>Lorem ipsum dolor.</td>
+            <td id="col3">Lorem ipsum dolor.</td>
+            <td>Lorem ipsum dolor.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lorem ipsum.</td>
+            <td></td>
+            <td>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td colspan="2">1</td>
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td rowspan="3">5</td>
+            <td colspan="2">6</td>
+            <td>8</td>
+        </tr>
+        <tr>
+       
+            <td>10</td>
+            <td rowspan="2">11</td>
+
+        </tr>
+        <tr>
+           
+            <td>14</td>
+     
+
+        </tr>
+    </table>
+    
+   
+    
+</body>
+</html>
