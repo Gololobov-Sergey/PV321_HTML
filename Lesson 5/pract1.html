@@ -5,15 +5,24 @@
     <title>Document</title>
     <style>
         table{
+            margin: auto;
+            font-family: Segoe UI;
+            font-size: 12px;
+            font-weight: 500;
             width: 80%;
             min-width: 650px;
-            max-width: 800px;
+            max-width: 750px;
             border-radius: 10px;
+            border-collapse: collapse;
         }
         
-        .col2{
+        .col2 {
             width: 17%;
-            text-align: center;
+            
+        }
+        .col1 {
+            width: auto;
+            
         }
         
         tbody tr td{
@@ -22,39 +31,88 @@
         
         tbody tr td:first-child{
             text-align: left;
-            padding-left: 10px;
+            padding: 10px 0 10px 20px;
+        }
+
+        
+        tr:nth-child(odd) td:nth-child(even){
+            background-color: #e7e7e7;
         }
         
-        tbody tr:nth-child(odd){
-            background-color: #a3a3a3;
+        tr:nth-child(even) td:nth-child(odd){
+            background-color: #e7e7e7;
+        }
+        
+        tr:nth-child(odd) td:nth-child(odd){
+            background-color: #dbdbdb;
+        }
+        
+        tr:nth-child(even) td:nth-child(even){
+            background-color: #f3f3f3;
         }
         
         tbody tr:nth-child(even){
-            background-color: #d4d4d4;
+            background-color: #ececec;
         }
         
+        td {
+            height: 20px;
+        }
 
         thead{
             color: white;
+            font-size: 16px;
         }
         .col-1{
-            background-color: #a6a6ff;
+            background-color: #7987aa;
+            border-radius: 10px 0 0 0 ;
         }
         
         .col-2{
-            background-color: #7070be;
+            background-color: #4f628d;
         }
         
         .col-3{
-            background-color: #3e3ea7;
+            background-color: #2f4173;
         }
         
         .col-4{
-            background-color: #2b2b8e;
+            background-color: #162954;
         }
         
         .col-5{
-            background-color: #191960;
+            background-color: #071538;
+            border-radius: 0 10px 0 0 ;
+        }
+        span{
+            display: block;
+            font-size: 30px;       
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        
+        .text2{
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #656566;
+            font-size: 11px
+        }
+        .btn{
+            width: 80px;
+            height: 15px;
+            background-color: #d3d3d3;
+            margin: 10px auto 10px auto;
+            padding-top: 7px;
+            padding-bottom: 9px;
+            border: 1px solid #656566;
+        }
+        
+        #c1{
+            background-color: #e7e7e7;
         }
     </style>
 </head>
@@ -67,32 +125,16 @@
         <thead>
             <tr>
                 <th class="col-1">Choice your plan</th>
-                <th class="col-2"><div><p>starter</p><p><span>$10</span></p><p>per month</p></div></th>
-                <th class="col-3"><div><p>econom</p><p><span>$10</span></p><p>per month</p></div></th>
-                <th class="col-4"><div><p>standart</p><p><span>$10</span></p><p>per month</p></div></th>
-                <th class="col-5"><div><p>premium</p><p><span>$10</span></p><p>per month</p></div></th>
+                <th class="col-2"><div><p>starter</p><span>$10</span><p class="text2">per month</p></div></th>
+                <th class="col-3"><div><p>econom</p><span>$30</span><p class="text2">per month</p></div></th>
+                <th class="col-4"><div><p>standart</p><span>$59</span><p class="text2">per month</p></div></th>
+                <th class="col-5"><div><p>premium</p><span>$99</span><p class="text2">per month</p></div></th>
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <th></th>
-                <th><a class="btn" href="">START</a></th>
-                <th><a class="btn" href="">START</a></th>
-                <th><a class="btn" href="">START</a></th>
-                <th><a class="btn" href="">START</a></th>
-            </tr>
-        </tfoot>
         <tbody>
             <tr>
                 <td>Lorem ipsum.</td>
-                <td>100 Gb</td>
-                <td>100 Gb</td>
-                <td>100 Gb</td>
-                <td>100 Gb</td>
-            </tr>
-            <tr>
-                <td>Lorem ipsum.</td>
-                <td>100 Gb</td>
+                <td id="c1">100 Gb</td>
                 <td>100 Gb</td>
                 <td>100 Gb</td>
                 <td>100 Gb</td>
@@ -125,6 +167,21 @@
                 <td>100 Gb</td>
                 <td>100 Gb</td>
             </tr>
+            <tr>
+                <td>Lorem ipsum.</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+                <td>100 Gb</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href=""><div class="btn">START</div></a></td>
+                <td><a href=""><div class="btn">START</div></a></td>
+                <td><a href=""><div class="btn">START</div></a></td>
+                <td><a href=""><div class="btn">START</div></a></td>
+            </tr>
+            
         </tbody>
     </table>
 </body>

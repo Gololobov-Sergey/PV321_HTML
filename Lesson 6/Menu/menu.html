@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            width: 100px;
+            text-align: center;
+        }
+        
+        nav ul ul{
+            display: none;
+        }
+        
+        nav ul li:hover > ul{
+            display: block;
+        }
+        
+        nav ul
+        {
+            background: #4c996b;
+            list-style: none;
+            position: relative;
+            display: inline-table;
+        }
+        
+        nav ul li{
+            float: left;
+        }
+        
+        nav ul li:hover{
+            background: #3f8058;
+        }
+        
+        nav ul ul{
+            background: #4c996b;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+        }
+        
+        nav ul ul li{
+            float: none;
+            position: relative;
+        }
+        
+        nav ul ul li:hover{
+            background: #3f8058;
+        }
+        
+        nav ul ul ul{
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+        
+        nav ul{
+            padding-left: 0;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Tutorials</a>
+                <ul>
+                    <li><a href="">Photoshop</a></li>
+                    <li><a href="">Illustrator</a>
+                        <ul>
+                            <li><a href="">Layers</a></li>
+                            <li><a href="">Tables</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Web Design</a>
+                        <ul>
+                            <li><a href="">HTML</a></li>
+                            <li><a href="">CSS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Articles</a>
+                <ul>
+                    <li><a href="">Web Design</a></li>
+                    <li><a href="">User Experiens</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
